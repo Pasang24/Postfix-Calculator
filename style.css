@@ -17,7 +17,7 @@
   height: 40%;
   padding-top: 20px;
   text-align: right;
-  background: lightgreen;
+  background: #343434;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  color: white;
   height: 70%;
 }
 
@@ -58,6 +59,7 @@
   outline: none;
   border: none;
   padding: 10px;
+  color: white;
 }
 
 .clearHistory-btn {
@@ -88,6 +90,8 @@
 }
 
 .buttons button {
+  background: white;
+  color: #343434;
   height: 100%;
   border: none;
   outline: none;
@@ -98,6 +102,8 @@
 button {
   cursor: pointer;
   font-weight: 600;
+  -webkit-tap-highlight-color: transparent;
+  transition: 0.2s ease;
 }
 
 .history-container {
@@ -140,12 +146,12 @@ button {
   word-wrap: break-word;
 }
 
-.changeColor {
-  background: grey;
-}
-
 @media (hover: hover) {
+  .screen-btns button:hover {
+    background: #28282b;
+  }
+
   .buttons button:hover {
-    background: grey;
+    background: #e2dfd2;
   }
 }

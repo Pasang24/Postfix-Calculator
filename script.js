@@ -9,7 +9,6 @@ const closeParanthesis = document.querySelector(".close-paranthesis");
 const dotBtn = document.querySelector(".dot");
 const operator1 = document.querySelectorAll(".op");
 const operator2 = document.querySelectorAll(".op1");
-const allBtn = document.querySelectorAll("button");
 const historyBtn = document.querySelector(".history-btn");
 const clearHistoryBtn = document.querySelector(".clearHistory-btn");
 const historyEl = document.querySelector(".history-container");
@@ -270,8 +269,3 @@ function setHistory() {
 setHistory();
 
 document.addEventListener("contextmenu", (event) => event.preventDefault());
-
-allBtn.forEach((btn) => {
-  btn.addEventListener("touchstart", () => btn.classList.add("changeColor"));
-  btn.addEventListener("touchend", () => btn.classList.remove("changeColor"));
-});
