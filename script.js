@@ -238,6 +238,7 @@ historyBtn.addEventListener("click", () => {
     historyBtn.innerText = "Keypad";
     historyEl.classList.add("slide-historyBar");
     clearHistoryBtn.classList.add("toggle-btn-display");
+    historyEl.scrollTop = historyEl.scrollHeight;
   } else {
     showHistory = false;
     historyBtn.innerText = "History";
@@ -256,9 +257,9 @@ function setHistory() {
   let historyHTML = "";
   for (let i = 0; i < history.length; i++) {
     historyHTML += `
-    <li>
-      <h4>${history[i].input}</h3>
-      <h3>=${history[i].output}</h2>
+    <li class="history-item">
+      <h4 class="history-input">${history[i].input}</h3>
+      <h3 class="history-output">=${history[i].output}</h2>
       <hr>
     </li>`;
   }
