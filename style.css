@@ -124,7 +124,7 @@ button {
   width: 6px;
 }
 .history-container::-webkit-scrollbar-thumb {
-  background: lightgreen;
+  background: #343434;
   border-radius: 14px;
 }
 
