@@ -26,7 +26,7 @@
 .display-screen {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
   height: 70%;
 }
 
@@ -35,6 +35,7 @@
   font-weight: 700;
   word-wrap: break-word;
   padding-right: 10px;
+  margin-bottom: 15px;
 }
 
 .lower-screen {
